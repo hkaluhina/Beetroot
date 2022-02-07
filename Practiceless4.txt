@@ -1,0 +1,29 @@
+1. Інтерпритована, з динамічною типізацією. Має багато бібліотек.
+2. Не повинна починатися з великої літери або цифри, без пробілів, підкреслювання замість пробілів.
+3. major_version = 3
+  minor_version = .9
+  version = major_version + minor_version
+  language = 'Python'
+  language_version = language + ' ' + str(version)
+4. n = 0
+   i = 0
+   while n <= 100:
+       if n % 3 == 0 and n % 5 == 0:
+           i += n
+           n += 1
+       else:
+           n += 1
+5. surname = 'Belik'
+   sur_length = len(surname)
+   n = 1
+   i = 1
+   while n <= sur_length:
+       i *= n
+       n += 1
+   print(str(sur_length) + '! = ', str(i))
+6. string = 'This is Sparta'
+   while len(string) >= 1:
+       print(string)
+       string = string[0:len(string)-1]
+   else:
+       print("Nothing's left here")
